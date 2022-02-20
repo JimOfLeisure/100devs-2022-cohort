@@ -5,6 +5,7 @@
 
 header, footer {
     height: 100px;
+    clear: both;
 }
 
 body > section {
