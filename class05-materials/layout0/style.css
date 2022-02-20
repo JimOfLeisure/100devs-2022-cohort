@@ -1,0 +1,19 @@
+* {
+    border: 1px black solid;
+}
+
+header, footer {
+    height: 100px;
+}
+
+body > section {
+    height: 300px;
+    width: 100%;
+}
+
+section > section {
+    float: left;
+    height: 300px;
+    width: 32%;
+    /* background: gray; */
+}
