@@ -9,6 +9,7 @@ header, footer {
 }
 
 body {
+    /* because > 1000px spacing and inline-block */
     margin: 0;
 }
 
@@ -28,7 +29,7 @@ section > section {
 
 @media screen and (min-width: 1000px) {
     section > section {
-        background: blue;
+        /* background: blue; */
         display: inline-block;
         float: none;
         width: 300px;
@@ -36,6 +37,21 @@ section > section {
     }
     section section + section {
         margin-left: 3.3333%;
+    }   
+}
+
+@media screen and (max-width: 750px) {
+    section > section {
+        width: 100%;
     }
-    
+    section > section + section {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /* previous query in effect, just need to override the 50%ers */
+    section > section + section {
+        width: 100%;
+    }
 }
