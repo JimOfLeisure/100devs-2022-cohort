@@ -8,14 +8,34 @@ header, footer {
     clear: both;
 }
 
+body {
+    margin: 0;
+}
+
 body > section {
     height: 300px;
     width: 100%;
+    /* for when in inline-block mode */
+    text-align: center;
 }
 
 section > section {
     float: left;
     height: 300px;
-    width: 33.333333%;
+    width: 33.3333%;
     /* background: gray; */
+}
+
+@media screen and (min-width: 1000px) {
+    section > section {
+        background: blue;
+        display: inline-block;
+        float: none;
+        width: 300px;
+        margin: 0;
+    }
+    section section + section {
+        margin-left: 3.3333%;
+    }
+    
 }
