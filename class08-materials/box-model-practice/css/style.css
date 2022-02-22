@@ -5,3 +5,30 @@
 /* Please give the section a thick blue border, height of 300px, and more the 400px of margin on the top */
 	
 /* Please make the spans have thin yellow borders and equal padding / margin on all sides */
+
+h1 {
+    padding: 1em 1em 1em 0;
+    margin: 1em 0 0 0;
+    background-color: violet;
+    color: lightblue;
+}
+
+h2 {
+    padding: 3em 3em;
+    border-color: darkgreen;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    background-color: orange;
+}
+
+section {
+    border: 1em blue solid;
+    height: 300px;
+    margin-top: 401px;
+}
+
+span {
+    border: 1px yellow solid;
+    margin: 0.5em;
+    padding: 0.5em;
+}
