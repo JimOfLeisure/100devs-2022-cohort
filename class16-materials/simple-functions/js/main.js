@@ -13,14 +13,14 @@ function div3(a, b, c) {
 //create a function that multiplys three numbers and returns the product
 
 function mult3(a, b, c) {
-    window.alert(a * b * c);
+    return a * b * c;
 }
 
 //---Medium
 //create a function that takes in three numbers. Add the first two numbers and return the remainder of dividing the sum of the first two numbers by the third number
 
 function foo(a, b, c) {
-    window.alert((a + b) % c);
+    return (a + b) % c;
 }
 
 //---Hard
