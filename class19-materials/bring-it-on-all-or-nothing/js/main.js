@@ -48,3 +48,11 @@ function takeNum(n) {
 }
 
 takeNum(30);
+
+fizzBuzzToo = n => {
+    for(let i=1; i<=n; i++) {
+        console.log(`${!(i%3)?'fizz':''}${!(i%5)?'buzz':''}`||i)
+    }
+}
+
+fizzBuzzToo(30);
