@@ -33,13 +33,21 @@ function month(s) {
         "july",
         "august",
     ]
-    alert(summerMonths.includes(s) ? "YAY" : "Booo");
+    alert(summerMonths.includes(s.toLowerCase) ? "YAY" : "Booo");
 }
 month("june");
 month("january");
 
 //*Loops*
 //Create a function that takes in a number. Console log every number from 1 to that number while skipping multiples of 5.
+
+/* ******
+*  Leon's example goes 5, 10, 15, ...
+*  Mine goes 1, 6, 11, ...
+*  Others coded results of 1,2,3,4,6,7,8,9,11 (no %5===0 logged)
+*
+* instructions unclear!
+****** */
 
 function loop(n) {
     for (let i=1; i<=n; i+=5) {
