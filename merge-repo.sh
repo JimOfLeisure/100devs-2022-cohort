@@ -1,7 +1,7 @@
 dir=class02-materials
 
 pushd ../$dir
-git filter-repo --to-subdirectory-filter $dir
+git filter-repo --force --to-subdirectory-filter $dir
 popd
 read foo
 git remote add classmat $dir \
