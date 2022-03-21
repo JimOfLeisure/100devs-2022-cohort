@@ -1,0 +1,57 @@
+* {
+    border: 1px black solid;
+    box-sizing: border-box;
+}
+
+header, footer {
+    height: 100px;
+    clear: both;
+}
+
+body {
+    /* because > 1000px spacing and inline-block */
+    margin: 0;
+}
+
+body > section {
+    height: 300px;
+    width: 100%;
+    /* for when in inline-block mode */
+    text-align: center;
+}
+
+section > section {
+    float: left;
+    height: 300px;
+    width: 33.3333%;
+    /* background: gray; */
+}
+
+@media screen and (min-width: 1000px) {
+    section > section {
+        /* background: blue; */
+        display: inline-block;
+        float: none;
+        width: 300px;
+        margin: 0;
+    }
+    section section + section {
+        margin-left: 3.3333%;
+    }   
+}
+
+@media screen and (max-width: 750px) {
+    section > section {
+        width: 100%;
+    }
+    section > section + section {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /* previous query in effect, just need to override the 50%ers */
+    section > section + section {
+        width: 100%;
+    }
+}
