@@ -9,3 +9,13 @@ the \#follow-along-materials channel.
 I do not represent 100 Devs or Leon; I'm just a fan who's decided to join
 the cohort and catch up with and follow the class materials to keep fresh
 and practice and meet others.
+
+### Known "missing" classes
+
+No class materials exist for these, for reasons (network night, project night, whatevs):
+
+- Class09
+- Class17
+- Class18
+
+Also, I may or may not include materials from "office hours" Sundays.
