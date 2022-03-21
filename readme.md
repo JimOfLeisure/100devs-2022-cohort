@@ -1,5 +1,5 @@
 These are my copies of materials from [100 Devs](https://leonnoel.com/100devs/)'
-([Twitch](https://www.twitch.tv/learnwithleon)) 2022 cohort.
+([Twitch](https://www.twitch.tv/learnwithleon), [YouTube](https://www.youtube.com/channel/UCGiRSHBdWuCgjgmPPz_13xw)) 2022 cohort.
 
 They include any lab work and homework I've done. If you're interested in
 the original materials, read the 100 Devs link above and consider joining
