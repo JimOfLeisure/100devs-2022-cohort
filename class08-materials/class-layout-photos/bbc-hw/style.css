@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+header {
+    height: 100px;
+}
+
+body > section, main {
+    height: 500px;
+}
+main {
+    width: 50%;
+    background-color: lightgray;
+    float: left;
+}
+body > section > section > section {
+    float: left;
+    width: 25%;
+    height: 250px;
+}
