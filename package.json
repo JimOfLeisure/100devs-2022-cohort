@@ -1,0 +1,23 @@
+{
+  "name": "100devs-2022-cohort",
+  "version": "1.0.0",
+  "description": "These are my copies of materials from [100 Devs](https://leonnoel.com/100devs/)' ([Twitch](https://www.twitch.tv/learnwithleon)) 2022 cohort.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JimOfLeisure/100devs-2022-cohort.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JimOfLeisure/100devs-2022-cohort/issues"
+  },
+  "homepage": "https://github.com/JimOfLeisure/100devs-2022-cohort#readme",
+  "devDependencies": {
+    "vite": "^2.8.6"
+  }
+}
