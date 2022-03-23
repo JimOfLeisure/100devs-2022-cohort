@@ -43,3 +43,5 @@ function flipManyCoins(n) {
 }
 
 flipManyCoins(20);
+
+// Oh, even though I was 1.5 hours late, I joined during the first lab work.
