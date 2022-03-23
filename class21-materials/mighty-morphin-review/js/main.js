@@ -29,5 +29,17 @@ threeNumberMath(5, 6, 7);
 // *Conditionals*
 //Create a function that returns heads or tails randomly and as fairly as possible. Call the function.
 
+const coinFlip = () => ['heads', 'tails'][Math.round(Math.random())];
+
+console.log(coinFlip());
+
 //*Loops*
 //Create a function that takes in a number. Console log the result of heads or tails using the previous function x times where x is the number passed into the function. Call the function.
+
+function flipManyCoins(n) {
+  for (let i = 0; i < n; i++) {
+    console.log(coinFlip());
+  }
+}
+
+flipManyCoins(20);
