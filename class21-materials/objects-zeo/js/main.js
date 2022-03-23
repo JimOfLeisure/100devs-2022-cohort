@@ -3,10 +3,17 @@
 const stopWatch = {};
 stopWatch.color = 'black';
 stopWatch.splitTime = 1.25;
-stopWatch.split2 = 2.5;
+stopWatch.brand = 'Timex';
 stopWatch.currentTime = 3.0;
-stopWatch.start = function () {};
-stopWatch.split = function (stopwatch) {
-  stopwatch.splitTime = stopwatch.currentTime;
+stopWatch.start = function (sw) {
+  sw.currentTime = 0;
+  console.log('Starting');
 };
-stopWatch.stop = function () {};
+stopWatch.split = function (sw) {
+  sw.splitTime = sw.currentTime;
+};
+stopWatch.stop = function (sw) {
+  console.log('Stopping');
+};
+
+console.log(stopWatch);
