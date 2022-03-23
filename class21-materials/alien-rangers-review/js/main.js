@@ -18,7 +18,8 @@ console.log(nums.filter(n => n % 2 == 0));
 
 function alertSeconds(arr) {
   const sorted = arr.sort((a, b) => a - b);
-  alert('' + sorted.at(-2) + ' ' + sorted[1]);
+  //   alert('' + sorted.at(-2) + ' ' + sorted[1]);
+  alert(sorted.at(-2) + sorted[1]);
 }
 
 alertSeconds(nums);
