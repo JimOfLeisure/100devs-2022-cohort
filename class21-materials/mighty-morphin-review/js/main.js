@@ -2,7 +2,7 @@
 // Declare a variable, reassign it to your fav holiday, make sure it is in all caps, and print the value to the console
 
 let bestDay = 'Talk Like a Pirate Day';
-console.log(bestDay);
+console.log(bestDay.toUpperCase());
 
 //Declare a variable, assign it a string, alert the last three characters in the string (Use your google-fu and the MDN)
 
