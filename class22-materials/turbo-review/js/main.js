@@ -25,13 +25,17 @@ console.log(rps());
 function playRps(choice) {
   const bot = rps();
   console.log(choice, bot);
-  if (choice == 'rock ' && bot == 'scissors') {
+  if (choice === bot) {
+    return 'tie';
+  }
+  if (choice === 'rock ' && bot === 'scissors') {
+    console.log('HIIIIIIIIIIII');
     return 'win';
   }
-  if (choice == 'scissors ' && bot == 'paper') {
+  if (choice === 'scissors ' && bot === 'paper') {
     return 'win';
   }
-  if (choice == 'paper ' && bot == 'rock') {
+  if (choice === 'paper ' && bot === 'rock') {
     return 'win';
   }
   return 'lose';
@@ -41,8 +45,8 @@ function playRps(choice) {
 //Create a function that takes an array of choices. Play the game x times where x is the number of choices in the array. Print the results of each game to the console.
 
 function playLotsRps(choiceArr) {
-  choiceArr.forEach(e => {
-    console.log(playRps(e));
+  choiceArr.forEach(choice => {
+    console.log(playRps(choice));
   });
 }
 
