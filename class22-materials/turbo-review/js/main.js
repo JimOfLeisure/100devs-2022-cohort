@@ -9,7 +9,7 @@ console.log(drink.trim());
 let words = 'I once had an apple with a worm in it';
 
 //FIXME
-console.log(words.split(/\s/).find(e => e.toLowerCase === 'apple'));
+console.log(words.split(/\s+/).find(e => e.toLowerCase() === 'apple'));
 
 // *Functions*
 // Create a function that returns rock, paper, or scissors as randomly as possible
