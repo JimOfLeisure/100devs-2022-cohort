@@ -24,18 +24,16 @@ console.log(rps());
 
 function playRps(choice) {
   const bot = rps();
-  console.log(choice, bot);
   if (choice === bot) {
     return 'tie';
   }
-  if (choice === 'rock ' && bot === 'scissors') {
-    console.log('HIIIIIIIIIIII');
+  if (choice === 'rock' && bot === 'scissors') {
     return 'win';
   }
-  if (choice === 'scissors ' && bot === 'paper') {
+  if (choice === 'scissors' && bot === 'paper') {
     return 'win';
   }
-  if (choice === 'paper ' && bot === 'rock') {
+  if (choice === 'paper' && bot === 'rock') {
     return 'win';
   }
   return 'lose';
