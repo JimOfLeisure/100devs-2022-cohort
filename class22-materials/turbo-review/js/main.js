@@ -8,7 +8,6 @@ console.log(drink.trim());
 
 let words = 'I once had an apple with a worm in it';
 
-//FIXME
 console.log(words.split(/\s+/).find(e => e.toLowerCase() === 'apple'));
 
 // *Functions*
