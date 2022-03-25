@@ -4,7 +4,7 @@ const mouse = {
   furColor: 'gray',
   feetCount: 4,
   tailCount: 1,
-  skitter: () => 'EEEEeeeeek!',
-  jump: () => 'Even worse',
-  eat: () => "Hey that's my food",
+  skitter: () => console.log('EEEEeeeeek!'),
+  jump: () => console.log('Even worse'),
+  eat: () => console.log("Hey that's my food"),
 };
