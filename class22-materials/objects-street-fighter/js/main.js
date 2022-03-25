@@ -20,3 +20,4 @@ const link = new StreetFighter('Link', 4);
 const pikachu = new StreetFighter('Pikachu', 3, 8, 4);
 
 console.log(link, pikachu);
+console.log(new StreetFighter());
