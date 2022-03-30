@@ -2,10 +2,10 @@
 
 const dog = {};
 
-this.ears = 2;
-this.legs = 4;
-this.eyes = 2;
-this.height = 2;
-this.bark = () => console.log('WOOF');
-this.whine = () => console.log('hmmmmhmmmph');
-this.bite = () => console.log('not as bad as the bark');
+dog.ears = 2;
+dog.legs = 4;
+dog.eyes = 2;
+dog.height = 2;
+dog.bark = () => console.log('WOOF');
+dog.whine = () => console.log('hmmmmhmmmph');
+dog.bite = () => console.log('not as bad as the bark');
