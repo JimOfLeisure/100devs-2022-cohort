@@ -6,10 +6,15 @@ let sentence = 'Am I a question or a human?';
 const isQuestion = s => s.at(-1) === '?';
 alert(isQuestion(sentence) ? `is a question` : `not a question`);
 
+// NOTE: Leon used String.endsWith('?')
+
 //Declare a variable, assign it a string of multiple words, replace every "jr. dev" with "software engineer", and print it to the console
 
 let jobTitles = 'jr. dev senior dev intern jr. dev';
 console.log(jobTitles.replace(/jr. dev/g, 'software engineer'));
+
+// NOTE: I checked MDN for String.replace, and it said you have to use regex to match all
+//  Then Leon did Strin.ReplaceAll() ... oh thing learned!
 
 // *Functions*
 // Create a function that returns rock, paper, or scissors as randomly as possible
