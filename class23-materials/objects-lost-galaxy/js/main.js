@@ -2,7 +2,7 @@
 
 const dog = {
   ears: 2,
-  legs: 1,
+  legs: 4,
   eyes: 2,
   height: 2,
   bark: () => console.log('WOOF'),
