@@ -28,3 +28,15 @@ function getDrink(event) {
     })
     .catch(err => console.error(err));
 }
+
+/*
+    HOMEWORK
+
+    - NASA Picture of day API working
+
+    - Find 3 public APIs, build 3 simple apps
+    - Handle spaces in drink names
+    - Push: carousel cycle through drinks
+
+
+*/
