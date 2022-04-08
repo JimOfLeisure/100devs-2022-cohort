@@ -9,6 +9,8 @@ const baseUrl = 'https://www.thecocktaildb.com/api/json/v1/1/search.php';
 
 const search = document.querySelector('input');
 const img = document.querySelector('img');
+const heading = document.querySelector('h2');
+const instructions = document.querySelector('#instructions');
 
 document.querySelector('button').addEventListener('click', getDrink);
 
@@ -19,7 +21,10 @@ function getDrink(event) {
     .then(res => res.json())
     .then(data => {
       console.log(data);
-      img.src = data.drinks[0].strDrinkThumb;
+      const drink = data.drinks[0];
+      img.src = drink.strDrinkThumb;
+      heading.innerText = drink.strDrink;
+      instructions.innerText = drink.strInstructions;
     })
     .catch(err => console.error(err));
 }
