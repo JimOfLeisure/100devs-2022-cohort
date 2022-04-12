@@ -21,6 +21,7 @@ function getDrink(event) {
     .then(res => res.json())
     .then(data => {
       console.log(data);
+      data.drinks.forEach(e => console.log(e.strVideo));
       const drink = data.drinks[0];
       img.src = drink.strDrinkThumb;
       heading.innerText = drink.strDrink;
