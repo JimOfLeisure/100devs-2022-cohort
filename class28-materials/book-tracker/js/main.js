@@ -5,6 +5,7 @@ const list = document.querySelector('ul');
 const keyName = 'bookList';
 const bookList = JSON.parse(localStorage.getItem(keyName)) || [];
 
+// TODO: Prevent duplicates
 function addBook(book) {
   bookList.push(book);
   localStorage.setItem(keyName, JSON.stringify(bookList))
