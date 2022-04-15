@@ -2,6 +2,26 @@
 document.querySelector('button').addEventListener('click', getFetch)
 const list = document.querySelector('ul');
 
+const keyName = 'bookList';
+const bookList = JSON.parse(localStorage.getItem(keyName)) || [];
+
+function addBook(book) {
+  bookList.push(book);
+  localStorage.setItem(keyName, JSON.stringify(bookList))
+}
+
+function render() {
+  list.innerHTML= '';
+  bookList.forEach(bookData => {
+    const book = document.createElement('li');
+    const name = document.createElement('h2');
+    book.appendChild(name);
+    name.textContent = bookData.title;
+    list.appendChild(book);
+
+  })
+}
+
 function getFetch() {
   const isbn = encodeURIComponent(document.querySelector('input').value);
   console.log(isbn)
@@ -13,15 +33,12 @@ function getFetch() {
       return res.json() }) // parse response as JSON
     .then(data => {
       console.log(data)
-
-      const book = document.createElement('li');
-      const name = document.createElement('h2');
-      book.appendChild(name);
-      name.textContent = data.title;
-      list.appendChild(book);
+      addBook(data);
+      render();
     })
     .catch(err => {
       console.log(`error ${err}`)
     });
 }
 
+render();
