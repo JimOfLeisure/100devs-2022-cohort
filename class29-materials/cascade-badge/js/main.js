@@ -22,10 +22,12 @@ console.log(twoArrs([5, 5], [2, 2]));
 // [68, -1, 1, -7, 10, 10] => [-1, 10]
 
 function indexMult(arr) {
-    return arr.map((e, i) => e * i);
+    // return arr.map((e, i) => e * i);
+    // Oh, I misread the question
+    return arr.filter((e, i) => e % i === 0);
 }
 
-console.log(indexMult([5,5,5]));
+console.log(indexMult([5,5,5,5,5]));
 
 //Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.Return your answer as a number.
 
