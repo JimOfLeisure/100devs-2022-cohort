@@ -4,12 +4,13 @@
 let bulbCandies = 16 - 5;
 let catCandies = 7 - 1;
 let weedCandies = 7 - 1;
-let totalCandies = bulbCandies + catCandies + totalCandies;
+let totalCandies = bulbCandies + catCandies + weedCandies;
 
 //Conditionals And Functions
 //You have a charmander in your party. Charmander can only battle if the temperature is above 0 degrees celcius. Create one function that converts a Fahrenheit value to Celcius and another fuction that tells you wheither or not charmander can battle
 
 const fahrToCelcius = (degF) => (degF - 32) * 5 / 9;
+console.log(fahrToCelcius(80));
 
 //Loops
 //You have joined an undeground pokemon leauge. In this league, trainers can use any number of pokemon. Print to the console "Pikachu I choose you" x times where x is the number of pokemon the trainer you are battling has in their party
@@ -19,3 +20,5 @@ function battle(n) {
         console.log('Pikachu I choose you');
     }
 }
+
+battle(10);
