@@ -4,19 +4,19 @@ class EspressoMachine {
     constructor(waterLevel, groundsLevel) {
         this.waterLevel = waterLevel;
         this.groundsLevel = groundsLevel;
-        this.makeSteam = function () {
-            console.log('gurgle gurgle gurgle');
-            this.waterLevel--;
-        };
-        this.makeEspresso = function () {
-            console.log('gurgle gurgle gurgle');
-            this.groundsLevel--;
-            this.waterLevel--;
-        };
-        this.clean = function () {
-            console.log('self-cleaning, somehow');
-        };
     }
+    makeSteam() {
+        console.log('gurgle gurgle gurgle');
+        this.waterLevel--;
+    };
+    makeEspresso() {
+        console.log('gurgle gurgle gurgle');
+        this.groundsLevel--;
+        this.waterLevel--;
+    };
+    clean() {
+        console.log('self-cleaning, somehow');
+    };
 }
 
 const em = new EspressoMachine(5, 5);
