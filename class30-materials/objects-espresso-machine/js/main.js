@@ -10,7 +10,7 @@ class EspressoMachine {
         this.waterLevel--;
     };
     makeEspresso() {
-        console.log('gurgle gurgle gurgle');
+        console.log('pschhh pschhh');
         this.groundsLevel--;
         this.waterLevel--;
     };
