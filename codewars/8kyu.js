@@ -13,3 +13,29 @@ function squareSum(numbers) {
 function countSheeps(arrayOfSheep) {
   return arrayOfSheep.reduce((acc, cur) => (cur === true ? acc + 1 : acc), 0);
 }
+
+// https://www.codewars.com/kata/58f8a3a27a5c28d92e000144
+function firstNonConsecutive (arr) {
+  const nonConsecutive = arr.find((n, i) => i !== 0 && n - 1 !== arr[i - 1]);
+  if (nonConsecutive === undefined) { return null; }
+  return nonConsecutive;
+}
+
+// https://www.codewars.com/kata/5c8bfa44b9d1192e1ebd3d15
+function warnTheSheep(queue) {
+  const wolfIdx = queue.indexOf('wolf');
+  return wolfIdx === queue.length - 1 ?
+    "Pls go away and stop eating my sheep" :
+    `Oi! Sheep number ${queue.length - wolfIdx - 1}! You are about to be eaten by a wolf!`
+  ;
+}
+
+// https://www.codewars.com/kata/5dd462a573ee6d0014ce715b
+function sameCase(a, b){
+  // Am regex fiend, but trying to force myself not to use it
+  // If a character is not a letter then the cases will match each other
+  if (a.toLowerCase() === a.toUpperCase() || b.toLowerCase() === b.toUpperCase()) {
+    return -1;
+  }
+  return (a.toLowerCase() === a) === (b.toLowerCase() === b) ? 1 : 0;
+}
