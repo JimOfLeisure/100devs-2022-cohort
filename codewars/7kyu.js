@@ -79,3 +79,10 @@ function mxdiflg(a1, a2) {
   Each accumulator is the largest difference
 */
 
+// https://www.codewars.com/kata/52fba66badcd10859f00097e/train/javascript
+function disemvowel(str) {
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+  return str.split('')
+    .filter(c => !vowels.includes(c.toLowerCase()))
+    .join('');
+}

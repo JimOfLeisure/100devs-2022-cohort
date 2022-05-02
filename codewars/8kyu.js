@@ -39,3 +39,42 @@ function sameCase(a, b){
   }
   return (a.toLowerCase() === a) === (b.toLowerCase() === b) ? 1 : 0;
 }
+
+// https://www.codewars.com/kata/58261acb22be6e2ed800003a/train/javascript
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+    return length * width * height;
+  }
+}
+
+// https://www.codewars.com/kata/52ceafd1f235ce81aa00073a/train/javascript
+function plural(n) {
+  return n !== 1;
+}
+
+// https://www.codewars.com/kata/576bb71bbbcf0951d5000044/train/javascript
+function countPositivesSumNegatives(input) {
+  if (input === null || input.length === 0) {
+      return [];
+  }
+  let posCount = 0;
+  let negSum = 0;
+  input.forEach(n => {
+      if (n > 0) { posCount++; }
+      if (n < 0) { negSum += n; }
+  })
+  return [posCount, negSum];
+}
+
+// https://www.codewars.com/kata/57e1e61ba396b3727c000251/train/javascript
+function stringClean(s){
+  const nums = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  return s.split('')
+    .filter(c => !nums.includes(c))
+    .join('');
+}
+
+// https://www.codewars.com/kata/57a5c31ce298a7e6b7000334/train/javascript
+function binToDec(bin){
+  return parseInt(bin, 2);
+}
