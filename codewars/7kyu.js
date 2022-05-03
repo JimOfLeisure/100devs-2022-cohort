@@ -97,3 +97,10 @@ function vowelIndices(word){
 // flexasaur try 2
 // ignore me, I'm just playin around
 const vowelIndices = w => Array.from(w, (c, i) => 'aeiouyAEIOUY'.includes(c) && i + 1).filter(Boolean);
+
+// https://www.codewars.com/kata/59ad7d2e07157af687000070
+// CodeWars grouped my solution with a one-liner, and I'm salty about it
+function sentencify(words) {
+  const str = words.join(' ');
+  return str[0].toUpperCase() + str.slice(1) + '.';
+}
