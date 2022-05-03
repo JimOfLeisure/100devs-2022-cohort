@@ -86,3 +86,14 @@ function disemvowel(str) {
     .filter(c => !vowels.includes(c.toLowerCase()))
     .join('');
 }
+
+// https://www.codewars.com/kata/5680781b6b7c2be860000036/train/javascript
+function vowelIndices(word){
+  const vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
+  return word.split('')
+    .reduce((acc, cur, i) => vowels.includes(cur.toLowerCase()) ? [...acc, i + 1] : acc, []);
+}
+
+// flexasaur try 2
+// ignore me, I'm just playin around
+const vowelIndices = w => Array.from(w, (c, i) => 'aeiouyAEIOUY'.includes(c) && i + 1).filter(Boolean);
