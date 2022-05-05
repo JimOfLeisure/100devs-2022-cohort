@@ -45,19 +45,19 @@ function chain(input, fs) {
 }
 
 // https://www.codewars.com/kata/5631213916d70a0979000066
-function pattern(n){
-  var output="";
-   for (let i=0; i<n; i++) {
-     output += `1${'*'.repeat(i)}${i > 0 ? i + 1 : ''}\n`;
-   }
-   // I am not proud of this, but it will do for now
-   output = output.slice(0,-1);
+function pattern(n) {
+  var output = "";
+  for (let i = 0; i < n; i++) {
+    output += `1${'*'.repeat(i)}${i > 0 ? i + 1 : ''}\n`;
+  }
+  // I am not proud of this, but it will do for now
+  output = output.slice(0, -1);
   return output;
 }
 
 // https://www.codewars.com/kata/545a4c5a61aa4c6916000755
-function gimme (triplet) {
-  const sorted = [...triplet].sort((a,b) => a-b);
+function gimme(triplet) {
+  const sorted = [...triplet].sort((a, b) => a - b);
   console.log(sorted[1])
   return triplet.reduce((acc, cur, i) => cur === sorted[1] ? i : acc, null);
 }
@@ -66,9 +66,9 @@ function gimme (triplet) {
 function mxdiflg(a1, a2) {
   return a1.reduce((acc, x) => {
     const maxDiff = a2.reduce((a, y) => {
-      const diff = Math.abs(y.length - x.length );
+      const diff = Math.abs(y.length - x.length);
       return diff > a ? diff : a;
-    } , -1);
+    }, -1);
     return maxDiff > acc ? maxDiff : acc;
   }, -1);
 }
@@ -88,7 +88,7 @@ function disemvowel(str) {
 }
 
 // https://www.codewars.com/kata/5680781b6b7c2be860000036/train/javascript
-function vowelIndices(word){
+function vowelIndices(word) {
   const vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
   return word.split('')
     .reduce((acc, cur, i) => vowels.includes(cur.toLowerCase()) ? [...acc, i + 1] : acc, []);
@@ -118,10 +118,28 @@ function longest(s1, s2) {
 function longest(s1, s2) {
   return [...new Set([...s1, ...s2])]
     .sort(String.localeCompare)
-  .join('');
+    .join('');
 }
 
 // https://www.codewars.com/kata/57ea5b0b75ae11d1e800006c/solutions/javascript
-function sortByLength (array) {
+function sortByLength(array) {
   return array.sort((a, b) => a.length - b.length);
 };
+
+// https://www.codewars.com/kata/59778cb1b061e877c50000cc/train/javascript
+
+function arrAdder(arr) {
+  const outArr = [];
+  for (let i = 0; i < arr[0].length; i++) {
+    outArr.push(arr.map(a => a[i] || '').join(''));
+  }
+  return outArr.join(" ");
+}
+
+// https://www.codewars.com/kata/57ee99a16c8df7b02d00045f/train/javascript
+"use strict";
+
+function flattenAndSort(array) {
+  return array.reduce((acc, cur) => [...acc, ...cur], [])
+    .sort((a, b) => a - b);
+}
