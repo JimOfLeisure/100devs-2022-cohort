@@ -104,3 +104,24 @@ function sentencify(words) {
   const str = words.join(' ');
   return str[0].toUpperCase() + str.slice(1) + '.';
 }
+
+// https://www.codewars.com/kata/5656b6906de340bd1b0000ac
+function longest(s1, s2) {
+  const both = s1 + s2;
+  const unique = new Set(both);
+  return Array.from(unique)
+    .sort(String.localeCompare)
+    .join('');
+}
+
+// actually first try, a bit flex-y
+function longest(s1, s2) {
+  return [...new Set([...s1, ...s2])]
+    .sort(String.localeCompare)
+  .join('');
+}
+
+// https://www.codewars.com/kata/57ea5b0b75ae11d1e800006c/solutions/javascript
+function sortByLength (array) {
+  return array.sort((a, b) => a.length - b.length);
+};
