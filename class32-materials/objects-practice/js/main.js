@@ -1,6 +1,51 @@
 // Come up with with a parent class
 // Extend that parent class into two children
 // Use Encapsulation, Abstraction, Inheritance, and Polymorphism 
+
+class Contractor {
+    constructor(name, rate) {
+        this.name = name;
+        this.rate = rate;
+    }
+    bill(hours) {
+        console.log(`For ${hours} work, your total is $${this.rate * hours}`);
+    }
+}
+
+class FrontEndContractor extends Contractor {
+    constructor(name, rate) {
+        super(name, rate);
+    }
+}
+
+class BackEndContractor extends Contractor {
+    constructor(name, rate) {
+        super(name, rate);
+    }
+}
+
+const jim = new FrontEndContractor('Jim', 3.35); // 1980s minimum wage, yo
+jim.bill(5);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for peeking if needed: 
 class Contractor{
     constructor(name,role){
         this._name = name
@@ -49,3 +94,4 @@ let agency = [bob,simba,machi]
 for(person of agency){
     person.sayHello()
 }
+*/
