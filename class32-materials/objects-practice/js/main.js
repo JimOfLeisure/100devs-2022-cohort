@@ -5,13 +5,13 @@
 class Contractor {
     constructor(name, rate) {
         this._name = name;
-        this._rate = rate;
+        this.bill = function (hours) {
+            console.log(`For ${hours} work, your total is $${rate * hours}`);
+        }
     }
     get name() { return this._name }
     get rate() { return this._rate }
-    bill(hours) {
-        console.log(`For ${hours} work, your total is $${this.rate * hours}`);
-    }
+
 }
 
 class FrontEndContractor extends Contractor {
@@ -51,7 +51,7 @@ jim.bill(5);
 
 
 
-/* for peeking if needed: 
+/* for peeking if needed:
 class Contractor{
     constructor(name,role){
         this._name = name
