@@ -4,27 +4,33 @@
 
 class Contractor {
     constructor(name, rate) {
-        this.name = name;
-        this.rate = rate;
+        this._name = name;
+        this._rate = rate;
     }
+    get name() { return this._name }
+    get rate() { return this._rate }
     bill(hours) {
         console.log(`For ${hours} work, your total is $${this.rate * hours}`);
     }
 }
 
 class FrontEndContractor extends Contractor {
-    constructor(name, rate) {
+    constructor(name, rate, framework) {
         super(name, rate);
+        this._framework = framework;
     }
+    get framework() { return this._framework }
 }
 
 class BackEndContractor extends Contractor {
-    constructor(name, rate) {
+    constructor(name, rate, framework) {
         super(name, rate);
+        this._framework = framework;
     }
+    get framework() { return this._framework }
 }
 
-const jim = new FrontEndContractor('Jim', 3.35); // 1980s minimum wage, yo
+const jim = new FrontEndContractor('Jim', 3.35, 'React'); // 1980s minimum wage, yo
 jim.bill(5);
 
 
