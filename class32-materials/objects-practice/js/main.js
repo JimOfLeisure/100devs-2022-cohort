@@ -10,7 +10,7 @@ class Contractor {
         }
     }
     get name() { return this._name }
-    get rate() { return this._rate }
+    // get rate() { return this._rate }
 
 }
 
