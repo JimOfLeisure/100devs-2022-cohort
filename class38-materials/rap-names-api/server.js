@@ -5,17 +5,17 @@ const app = express();
 const PORT = process.env.PORT || 8000;
 
 const rappers = {
-    '21 Savage': {
+    '21 savage': {
         age: 29,
         birthName: 'Sheyaa Bin Abraham-Joseph',
         birthLocation: 'London, England',
     },
-    'Chance the Rapper': {
+    'chance the rapper': {
         age: 29,
         birthName: 'Chancelor Bennett',
         birthLocation: 'Chicago, Illinois',
     },
-    'Dylan': {
+    'dylan': {
         age: 29,
         birthName: 'Dylan',
         birthLocation: 'Dylan',
@@ -27,7 +27,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api/:rapperName', (req, res) => {
-    res.json(rappers[req.params.rapperName]);
+    if (rappers[req.params.rapperName.toLowerCase()]) {
+        res.json(rappers[req.params.rapperName.toLowerCase()]);
+    } else {
+        res.json(rappers['dylan']);
+    }
 })
 app.listen(PORT, () => {
     console.log(`The server is running on port ${PORT}, and Leon is funny and awesome`);
